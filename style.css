@@ -1,0 +1,92 @@
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #1A2B4C;
+    width: 100%;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 40px;
+    border-radius: 50%;
+    padding-left: 10px;
+}
+
+.navbar h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #F7D488;
+}
+
+.navbar .links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    padding-right: 10px;
+}
+
+.navbar .links a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+}
+
+.navbar .links a:hover {
+    color: #F7D488;
+}
+
+body {
+    display: block;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #FFF8F0;
+    color: #333333;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+body img {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    width: 100px;
+    padding: 10px;
+}
+
+body form {
+    padding: 10px;
+}
+
+body p {
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #1A2B4C;
+    color: #FFF8F0;
+    padding: 2rem 1rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
