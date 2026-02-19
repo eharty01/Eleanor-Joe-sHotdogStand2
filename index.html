@@ -89,7 +89,7 @@
             /* round the input */
             input = Math.round(input * 100) / 100;
             let dollars = Math.floor(input);
-            let cents = input - dollars;
+            let cents = Math.round((input - dollars) * 100) / 100;
             let output = "";
 
             /* make sure cents are included to the hundredths */
@@ -142,7 +142,7 @@
                 total = subtotalPostDiscount * 1.0625;
             } else {
                 tax = subtotal * 0.0625;
-                total = subtotal * 1.0625;
+                total = subtotalPostDiscount * 1.0625;
             }
 
             document.getElementById('hotdog-count').textContent = nameQuantities["hotdogs"];
