@@ -11,6 +11,28 @@
   </nav>
 </head>
 <body>
+    <form>
+        <div id='name-field'>
+                Name* <input type='text' name='name'>
+                <div class='error'>&nbsp;</div>
+        </div>
+        <div id='email-field'>
+                Email* <input type='text' name='email'>
+                <div class='error'>&nbsp;</div>
+        </div>
+        <input type='submit'>
+    </form>
+
+    <script>
+        function checkValid() {
+          if (document.querySelector('input[name="name]"]') == "") {
+          	alert("life");
+            return false;
+          } else {
+          	return true;
+          }
+        }
+    </script>
     <div class = "receipt">
         <h2>Joe's Hotdog Stand Receipt: Your Order</h2>
         <p>Thank you for your business!</p>
