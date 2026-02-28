@@ -24,27 +24,25 @@
     </form>
 
 <script>
-function checkValid()
-
-      if (document.querySelector(input [name="name"]).value == "" || document.querySelector(input [name="email"]).value == "") {
-
+function checkValid() {
+      if (document.querySelector("input[name="name"]").value == "" || document.querySelector("input[name="email"]").value == "") {
          return false;
-
       } else {
-         let email = document.querySelector(input [name="email"]);
-         let atCount = 0;
-         let periodCount = 0;
+         let email = document.querySelector("input[name="email"]").value;
 
-         for (let i = 0; i < email.length(); i++) {
-              if (email[i] == '@') {atCount += 1}
-              if (email[I] == '.' {periodCount += 1}
-         }
-
-         if (atCount == 0 || periodCount == 0) {return false;}
-         return true;
+         if (email.indexOf("@") !== -1 && email.indexOf(".") !== -1) {return true}
+         return false;
       }
 
- } 
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    if (checkValid()) {
+      alert('form is valid');
+    } else {
+      alert('check inputs);
+  }
+} 
 </script>
   
 </body>
